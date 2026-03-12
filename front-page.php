@@ -18,6 +18,13 @@
     </div>
   </section>
 
+  <section class="section posts-explorer-section" id="posts-explorer">
+    <span class="badge">Conteúdo dinâmico</span>
+    <h2>Explorar posts</h2>
+    <p>Filtre posts por busca, categoria e tag em uma listagem dinâmica alimentada pela REST API do WordPress.</p>
+    <div id="experimento-posts-grid-root" class="posts-grid-root"></div>
+  </section>
+
   <section class="section" id="status">
     <span class="badge">Bootstrap inicial</span>
     <h2>Ambiente pronto para crescer</h2>

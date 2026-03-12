@@ -18,20 +18,5 @@ add_action('after_setup_theme', function () {
 });
 
 add_action('wp_enqueue_scripts', function () {
-    $version = wp_get_theme()->get('Version');
-    wp_enqueue_style('experimento-theme-style', get_stylesheet_uri(), [], $version);
-
-    wp_enqueue_script(
-        'experimento-posts-grid',
-        get_template_directory_uri() . '/assets/posts-grid.js',
-        ['wp-element'],
-        $version,
-        true
-    );
-
-    wp_localize_script('experimento-posts-grid', 'experimentoPostsGrid', [
-        'root' => esc_url_raw(rest_url('wp/v2')),
-        'homeUrl' => esc_url_raw(home_url('/')),
-        'nonce' => wp_create_nonce('wp_rest'),
-    ]);
+    wp_enqueue_style('experimento-theme-style', get_stylesheet_uri(), [], wp_get_theme()->get('Version'));
 });

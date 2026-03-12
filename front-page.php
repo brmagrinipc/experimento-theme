@@ -18,12 +18,7 @@
     </div>
   </section>
 
-  <section class="section posts-explorer-section" id="posts-explorer">
-    <span class="badge">Conteúdo dinâmico</span>
-    <h2>Explorar posts</h2>
-    <p>Filtre posts por busca, categoria e tag em uma listagem dinâmica alimentada pela REST API do WordPress.</p>
-    <div id="experimento-posts-grid-root" class="posts-grid-root"></div>
-  </section>
+  <?php echo do_blocks('<!-- wp:experimento/posts-explorer {"title":"Explorar posts","description":"Filtre posts por busca, categoria e tag em uma listagem dinâmica alimentada pela REST API do WordPress.","postsPerPage":12,"showSearch":true,"showCategoryFilter":true,"showTagFilter":true} /-->'); ?>
 
   <section class="section" id="status">
     <span class="badge">Bootstrap inicial</span>

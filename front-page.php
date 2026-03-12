@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="site-shell">
+<div class="site-shell home-shell">
   <section class="hero">
     <?php if (function_exists('the_custom_logo') && has_custom_logo()) : ?>
       <div class="site-logo-wrap"><?php the_custom_logo(); ?></div>

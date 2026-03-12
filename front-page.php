@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <div class="site-shell">
   <section class="hero">
+    <?php if (function_exists('the_custom_logo') && has_custom_logo()) : ?>
+      <div class="site-logo-wrap"><?php the_custom_logo(); ?></div>
+    <?php endif; ?>
     <span class="eyebrow">⚗️ Experimento coletivo no ar</span>
     <h1><?php bloginfo('name'); ?></h1>
     <p><?php bloginfo('description'); ?></p>
